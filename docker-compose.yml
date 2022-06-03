@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+
+    cleverback_web:
+        image: cleverback:latest
+        container_name: 'cleverback_web'
+        ports:
+          - 80:80
+        volumes:
+          - ./web:/var/www/html
