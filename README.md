@@ -46,3 +46,6 @@ docker-compose down --volumes
 ```sh
 http://localhost
 ```
+![alt text](imgs/all.png)
+![alt text](imgs/filter1.PNG)
+![alt text](imgs/filter2.PNG)
