@@ -7,13 +7,23 @@ class LCountries
 {
     protected $ci;
 
+    public $contries = [
+        237 => ["Cameroon", "#^\((237)\) ?[2368]\d{7,8}$#"], 
+        251 => ["Ethiopia", "#^\((251)\) ?[1-59]\d{8}$#"], 
+        212 => ["Morocco", "#^\((212)\) ?[5-9]\d{8}$#"], 
+        258 => ["Mozambique", "#^\((258)\) ?[28]\d{7,8}$#"], 
+        256 => ["Uganda", "#^\((256)\) ?\d{9}$#"]
+    ];
+
     public function __construct()
     {
         $this->ci =& get_instance();
+        $this->ci->load->library('LValidations', null, 'lvalidations');
+        $this->ci->load->model('MContacts','mcontacts');
         
     }
 
-        /**
+     /**
      * Returns a list of countries
      *
      * @return array 
