@@ -37,4 +37,8 @@ class LCountries
         return $phones;
     }
 
+    function getAll(){
+        return $this->contries;
+    }
+
 }
