@@ -74,11 +74,11 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-    'dsn'	=> '',
+    'dsn'      => APPPATH.'/db',
     'hostname' => '',
     'username' => '',
     'password' => '',
-    'database' => './web/db/sample-3.db',
+    'database' => 'sample-3.db',
     'dbdriver' => 'sqlite3',
     'dbprefix' => '',
     'pconnect' => FALSE,
@@ -94,4 +94,6 @@ $db['default'] = array(
     'failover' => array(),
     'save_queries' => TRUE
 );
+
+
 
